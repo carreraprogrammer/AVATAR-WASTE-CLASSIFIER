@@ -1,0 +1,24 @@
+.badge {
+  --padding-top: var(--spacing-xs);
+  --padding-bottom: var(--spacing-xs);
+  --padding-start: var(--spacing-sm);
+  --padding-end: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.badge--small {
+  font-size: var(--font-size-xs);
+}
+
+.badge--medium {
+  font-size: var(--font-size-sm);
+}
+
+.badge--large {
+  font-size: var(--font-size-base);
+  --padding-top: var(--spacing-sm);
+  --padding-bottom: var(--spacing-sm);
+  --padding-start: var(--spacing-md);
+  --padding-end: var(--spacing-md);
+}

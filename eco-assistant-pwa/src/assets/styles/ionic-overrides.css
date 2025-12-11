@@ -1,0 +1,282 @@
+/**
+ * Ionic Framework Overrides
+ * Custom styles for Ionic components
+ */
+
+/* ========== Ionic Variables ========== */
+:root {
+  /* Primary color (Azul) */
+  --ion-color-primary: #007BFF;
+  --ion-color-primary-rgb: 0, 123, 255;
+  --ion-color-primary-contrast: #FFFFFF;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #006FE0;
+  --ion-color-primary-tint: #1A8AFF;
+
+  /* Success color (Verde) */
+  --ion-color-success: #28A745;
+  --ion-color-success-rgb: 40, 167, 69;
+  --ion-color-success-contrast: #FFFFFF;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #23923D;
+  --ion-color-success-tint: #3EB058;
+
+  /* Warning color */
+  --ion-color-warning: #FFC107;
+  --ion-color-warning-rgb: 255, 193, 7;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #E0AA06;
+  --ion-color-warning-tint: #FFD020;
+
+  /* Danger color */
+  --ion-color-danger: #DC3545;
+  --ion-color-danger-rgb: 220, 53, 69;
+  --ion-color-danger-contrast: #FFFFFF;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #C22E3C;
+  --ion-color-danger-tint: #E04C59;
+
+  /* Medium (Gray) */
+  --ion-color-medium: #6C757D;
+  --ion-color-medium-rgb: 108, 117, 125;
+  --ion-color-medium-contrast: #FFFFFF;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #5F676E;
+  --ion-color-medium-tint: #7B838A;
+
+  /* Light */
+  --ion-color-light: #F5F5F5;
+  --ion-color-light-rgb: 245, 245, 245;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #D7D7D7;
+  --ion-color-light-tint: #F6F6F6;
+
+  /* Dark */
+  --ion-color-dark: #343A40;
+  --ion-color-dark-rgb: 52, 58, 64;
+  --ion-color-dark-contrast: #FFFFFF;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #2E3338;
+  --ion-color-dark-tint: #484E53;
+
+  /* Background */
+  --ion-background-color: #FFFFFF;
+  --ion-background-color-rgb: 255, 255, 255;
+
+  /* Text */
+  --ion-text-color: #343A40;
+  --ion-text-color-rgb: 52, 58, 64;
+
+  /* Fonts */
+  --ion-font-family: var(--font-family-base);
+}
+
+/* ========== Ion Button Overrides ========== */
+ion-button {
+  --border-radius: var(--radius-md);
+  --padding-top: var(--spacing-sm);
+  --padding-bottom: var(--spacing-sm);
+  --padding-start: var(--spacing-lg);
+  --padding-end: var(--spacing-lg);
+  font-weight: var(--font-weight-semibold);
+  text-transform: none;
+  transition: all var(--transition-fast);
+}
+
+ion-button::part(native) {
+  transition: all var(--transition-fast);
+}
+
+ion-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+ion-button:active {
+  transform: translateY(0);
+}
+
+/* Button sizes */
+ion-button.button-small {
+  --padding-top: var(--spacing-xs);
+  --padding-bottom: var(--spacing-xs);
+  --padding-start: var(--spacing-md);
+  --padding-end: var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+ion-button.button-large {
+  --padding-top: var(--spacing-md);
+  --padding-bottom: var(--spacing-md);
+  --padding-start: var(--spacing-xl);
+  --padding-end: var(--spacing-xl);
+  font-size: var(--font-size-lg);
+}
+
+/* ========== Ion Card Overrides ========== */
+ion-card {
+  --background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+ion-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+ion-card-header {
+  padding: var(--spacing-lg);
+}
+
+ion-card-content {
+  padding: var(--spacing-lg);
+}
+
+ion-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+}
+
+ion-card-subtitle {
+  font-size: var(--font-size-md);
+  color: var(--color-gray-600);
+  margin-top: var(--spacing-xs);
+}
+
+/* ========== Ion Badge Overrides ========== */
+ion-badge {
+  --padding-top: var(--spacing-xs);
+  --padding-bottom: var(--spacing-xs);
+  --padding-start: var(--spacing-sm);
+  --padding-end: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+/* ========== Ion Spinner Overrides ========== */
+ion-spinner {
+  --color: var(--ion-color-primary);
+}
+
+/* ========== Ion Content Overrides ========== */
+ion-content {
+  --background: var(--color-white);
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+/* ========== Ion Header/Toolbar Overrides ========== */
+ion-header {
+  box-shadow: var(--shadow-sm);
+}
+
+ion-toolbar {
+  --background: var(--color-white);
+  --color: var(--color-gray-900);
+  --padding-top: var(--spacing-sm);
+  --padding-bottom: var(--spacing-sm);
+  --padding-start: var(--spacing-md);
+  --padding-end: var(--spacing-md);
+}
+
+ion-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ========== Ion Page Overrides ========== */
+ion-page {
+  background: var(--color-white);
+}
+
+/* ========== Ion Modal Overrides ========== */
+ion-modal {
+  --border-radius: var(--radius-xl);
+  --box-shadow: var(--shadow-2xl);
+}
+
+ion-modal::part(backdrop) {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+/* ========== Ion Toast Overrides ========== */
+ion-toast {
+  --border-radius: var(--radius-lg);
+  --box-shadow: var(--shadow-lg);
+}
+
+/* ========== Ion Loading Overrides ========== */
+ion-loading {
+  --backdrop-opacity: 0.5;
+  --spinner-color: var(--ion-color-primary);
+}
+
+/* ========== Fullscreen Kiosk Mode ========== */
+.kiosk-mode ion-content {
+  --background: var(--color-neutral);
+}
+
+.kiosk-mode ion-header {
+  display: none;
+}
+
+.kiosk-mode {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* ========== Safe Area (for notched devices) ========== */
+@supports (padding-top: env(safe-area-inset-top)) {
+  ion-header {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  ion-footer {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  ion-content {
+    --padding-top: env(safe-area-inset-top);
+    --padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ========== Responsive Ionic Overrides ========== */
+@media (max-width: 768px) {
+  ion-card {
+    margin: var(--spacing-sm);
+  }
+
+  ion-card-header,
+  ion-card-content {
+    padding: var(--spacing-md);
+  }
+
+  ion-button.button-large {
+    --padding-top: var(--spacing-sm);
+    --padding-bottom: var(--spacing-sm);
+    --padding-start: var(--spacing-lg);
+    --padding-end: var(--spacing-lg);
+    font-size: var(--font-size-md);
+  }
+}
+
+/* ========== High Contrast Mode ========== */
+@media (prefers-contrast: high) {
+  ion-button {
+    border: 2px solid currentColor;
+  }
+
+  ion-card {
+    border: 2px solid var(--color-gray-300);
+  }
+}

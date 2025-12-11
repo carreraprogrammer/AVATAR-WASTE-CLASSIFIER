@@ -1,0 +1,179 @@
+/**
+ * CSS Variables
+ * Design tokens for the EcoAssistant PWA
+ */
+
+:root {
+  /* ========== NTC 2184 Colors ========== */
+  --color-azul: #007BFF;
+  --color-blanco: #F5F5F5;
+  --color-verde: #28A745;
+  --color-gris: #6C757D;
+  --color-negro: #343A40;
+
+  /* Container colors with semantic names */
+  --color-plastic: var(--color-azul);
+  --color-glass: var(--color-azul);
+  --color-paper: var(--color-blanco);
+  --color-cardboard: var(--color-blanco);
+  --color-organic: var(--color-verde);
+  --color-metal: var(--color-gris);
+  --color-other: var(--color-negro);
+
+  /* ========== Semantic Colors ========== */
+  --color-success: #28A745;
+  --color-error: #DC3545;
+  --color-warning: #FFC107;
+  --color-info: #17A2B8;
+  --color-neutral: #F5F5F5;
+
+  /* ========== Grayscale ========== */
+  --color-white: #FFFFFF;
+  --color-gray-100: #F8F9FA;
+  --color-gray-200: #E9ECEF;
+  --color-gray-300: #DEE2E6;
+  --color-gray-400: #CED4DA;
+  --color-gray-500: #ADB5BD;
+  --color-gray-600: #6C757D;
+  --color-gray-700: #495057;
+  --color-gray-800: #343A40;
+  --color-gray-900: #212529;
+  --color-black: #000000;
+
+  /* ========== Typography ========== */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  --font-family-heading: var(--font-family-base);
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono',
+    Consolas, 'Courier New', monospace;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 2rem;      /* 32px */
+  --font-size-3xl: 2.5rem;    /* 40px */
+  --font-size-4xl: 3rem;      /* 48px */
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ========== Spacing ========== */
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 1rem;       /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-2xl: 3rem;      /* 48px */
+  --spacing-3xl: 4rem;      /* 64px */
+  --spacing-4xl: 6rem;      /* 96px */
+
+  /* ========== Border Radius ========== */
+  --radius-none: 0;
+  --radius-sm: 0.25rem;     /* 4px */
+  --radius-md: 0.5rem;      /* 8px */
+  --radius-lg: 1rem;        /* 16px */
+  --radius-xl: 1.5rem;      /* 24px */
+  --radius-2xl: 2rem;       /* 32px */
+  --radius-full: 9999px;    /* Fully rounded */
+
+  /* ========== Shadows ========== */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+  /* ========== Transitions ========== */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Easing functions */
+  --ease-natural: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+
+  /* ========== Z-index ========== */
+  --z-base: 1;
+  --z-camera: 1;
+  --z-avatar: 10;
+  --z-result: 20;
+  --z-conversation: 30;
+  --z-modal: 40;
+  --z-toast: 50;
+  --z-tooltip: 60;
+
+  /* ========== Breakpoints (for reference in JS) ========== */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+
+  /* ========== Layout ========== */
+  --max-width-container: 1200px;
+  --header-height: 56px;
+  --footer-height: 64px;
+
+  /* ========== Avatar Specific ========== */
+  --avatar-size-sm: 200px;
+  --avatar-size-md: 300px;
+  --avatar-size-lg: 400px;
+  --avatar-size-xl: 500px;
+
+  /* ========== Animation Durations ========== */
+  --duration-blink: 150ms;
+  --duration-button-press: 200ms;
+  --duration-color-flash: 250ms;
+  --duration-state-transition: 300ms;
+  --duration-card-slide: 400ms;
+  --duration-background-fade: 500ms;
+  --duration-error-shake: 600ms;
+  --duration-celebration: 800ms;
+  --duration-reset-fade: 1000ms;
+  --duration-background-pulse: 3000ms;
+  --duration-breathing-cycle: 4000ms;
+}
+
+/* ========== Dark Mode (Future) ========== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override colors for dark mode if needed */
+  }
+}
+
+/* ========== Reduced Motion ========== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+    --duration-blink: 0ms;
+    --duration-button-press: 0ms;
+    --duration-color-flash: 0ms;
+    --duration-state-transition: 0ms;
+    --duration-card-slide: 0ms;
+    --duration-background-fade: 0ms;
+    --duration-error-shake: 0ms;
+    --duration-celebration: 0ms;
+    --duration-reset-fade: 0ms;
+    --duration-background-pulse: 0ms;
+    --duration-breathing-cycle: 0ms;
+  }
+}
