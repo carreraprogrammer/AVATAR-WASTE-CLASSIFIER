@@ -5,6 +5,7 @@ interface ImportMetaEnv {
   readonly VITE_BACKEND_API_URL: string;
   readonly VITE_ELEVENLABS_AGENT_ID: string;
   readonly VITE_ELEVENLABS_API_KEY: string;
+  readonly VITE_ELEVENLABS_VOICE_ID: string;
   readonly VITE_TENANT_ID: string;
   readonly VITE_STATION_ID: string;
   readonly VITE_ORGANIZATION_ID: string;

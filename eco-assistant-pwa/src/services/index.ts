@@ -5,4 +5,5 @@
 
 export * from './api';
 export * from './ai';
+export * from './voice';
 export * from './storage';

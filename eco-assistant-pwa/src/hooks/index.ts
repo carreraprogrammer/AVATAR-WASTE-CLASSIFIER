@@ -7,3 +7,4 @@ export { useCamera } from './useCamera';
 export { useObjectDetection } from './useObjectDetection';
 export { useClassification } from './useClassification';
 export { useIdleTimer } from './useIdleTimer';
+export { useVoice } from './useVoice';

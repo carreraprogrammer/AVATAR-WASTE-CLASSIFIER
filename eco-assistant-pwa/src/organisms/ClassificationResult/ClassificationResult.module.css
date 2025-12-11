@@ -1,0 +1,58 @@
+.result {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2xl);
+  animation: fadeIn var(--duration-celebration) var(--ease-natural);
+}
+
+.badgeSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardSection {
+  width: 100%;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  min-width: 200px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .result {
+    gap: var(--spacing-xl);
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .actionButton {
+    width: 100%;
+    min-width: unset;
+  }
+}
